@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Resting-State EEG in Parkinson's Disease and Healthy Controls",
+  "description": "This dataset comprises 358 resting-state EEG recordings from 312 participants with Parkinson's disease and healthy controls, collected under eyes-open resting conditions. It includes longitudinal sessions for some participants along with demographic, clinical (MoCA, UPDRS-III, levodopa dose), and acquisition metadata. The data are organized in BIDS format to support research on EEG biomarkers of Parkinson's disease progression and neurophysiology.",
+  "methods_description": "EEG recordings were acquired in BrainVision format (.vhdr, .vmrk, .eeg) using Pz as reference, with 63-64 EEG channels and some auxiliary channels (e.g., audio, respiratory). Most recordings were sampled at 500 Hz, with a subset at 25,000 Hz. Recordings were collected during eyes-open resting-state conditions and organized according to BIDS 1.11.1.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -13,41 +15,6 @@
     "James Cavanagh": {},
     "Nandakumar Narayanan": {}
   },
-  "related_identifiers": [
-    {
-      "identifier": "10.18112/openneuro.ds008768.v1.0.0",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
-    },
-    {
-      "identifier": "https://github.com/nemarDatasets/on008768",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "https://nemar.org/dataset/on008768",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    }
-  ],
-  "resource_type_general": "Dataset",
-  "modalities": [
-    "eeg"
-  ],
-  "resource_type_specific": "EEG Dataset",
-  "sizes": [
-    "36 B (1 files)"
-  ],
-  "formats": [
-    ".eeg",
-    ".json",
-    ".md",
-    ".tsv",
-    ".vhdr",
-    ".vmrk"
-  ],
-  "description": "This dataset comprises 358 resting-state EEG recordings from 312 participants with Parkinson's disease and healthy controls, collected under eyes-open conditions. Some participants contributed multiple longitudinal sessions, with accompanying demographic and clinical metadata including MoCA and UPDRS Part III scores, disease duration, and levodopa equivalent daily dose. The dataset was curated and released in BIDS format for public reuse in studying neural correlates of Parkinson's disease.",
-  "methods_description": "EEG recordings were collected in BrainVision format using eyes-open resting-state conditions, with Pz as the reference electrode. Most recordings were sampled at 500 Hz, with a subset at 25,000 Hz, and contained between 63 and 64 EEG channels plus optional auxiliary channels (e.g., audio, respiratory). Acquisition dates were de-identified while preserving inter-session intervals.",
   "keywords": [
     {
       "term": "Electroencephalography",
@@ -67,10 +34,41 @@
     },
     {
       "term": "longitudinal study"
-    },
-    {
-      "term": "BIDS"
     }
   ],
-  "source_hash": "ee9dce432a38e419d710de6f4dd90859a24c72b181bc813fec8166f327697b67"
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/nemarDatasets/on008768",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on008768",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds008768.v1.0.0",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    }
+  ],
+  "resource_type_general": "Dataset",
+  "resource_type_specific": "EEG Dataset",
+  "modalities": [
+    "eeg"
+  ],
+  "sizes": [
+    "59.17 GB (1073 files)"
+  ],
+  "formats": [
+    ".eeg",
+    ".json",
+    ".md",
+    ".tsv",
+    ".vhdr",
+    ".vmrk",
+    ".yml"
+  ],
+  "source_hash": "d8052dc9e3494847e997c9fff2b48d9986093e08bd182f9ac2d03a4c49b6aad9"
 }
