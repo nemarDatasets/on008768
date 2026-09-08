@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.on008768-blue)](https://doi.org/10.82901/nemar.on008768)
+
 # Resting-State EEG in Parkinson's Disease and Healthy Controls
 
 ## Overview
